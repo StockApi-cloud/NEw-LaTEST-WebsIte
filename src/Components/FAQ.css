@@ -1,0 +1,148 @@
+/* FAQ.css */
+.faq-container {
+  width: 90%; /* Slightly wider for impact */
+  max-width: 1600px; /* Increased max-width for larger screens */
+  margin: 120px auto; /* More top margin for dramatic spacing */
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  padding: 30px; /* More internal padding */
+  background: linear-gradient(135deg, #1a1a1a 0%, #2e2e2e 100%); /* Dark gradient background */
+  border: 2px solid #00ffcc; /* Neon cyan border */
+  border-radius: 15px; /* Smoother rounded corners */
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.5); /* Glowing effect */
+  position: relative;
+  overflow: hidden; /* To contain internal effects */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.faq-container h2 {
+  text-align: center;
+  color: #00ffcc; /* Neon cyan for heading */
+  font-size: 2.5rem; /* Larger heading */
+  margin-bottom: 30px;
+  text-transform: uppercase; /* Bold and loud */
+  letter-spacing: 2px; /* Spacing for impact */
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.7); /* Neon glow */
+}
+
+.faq-item {
+  border-bottom: 1px solid #444; /* Subtle dark border */
+  padding: 15px 0;
+  transition: all 0.3s ease; /* Smooth transition for effects */
+}
+
+.faq-item:hover {
+  background: rgba(0, 255, 204, 0.1); /* Subtle neon hover effect */
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1.4rem; /* Larger font */
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: #ffffff; /* White text */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Slight glow */
+  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  box-sizing: border-box; /* Ensure padding fits within width */
+}
+
+.faq-question span {
+  font-size: 1.8rem; /* Larger +/– sign */
+  color: #ff007a; /* Neon pink for icons */
+  transition: transform 0.3s ease; /* Rotate effect */
+}
+
+.faq-question:hover {
+  color: #ff007a; /* Neon pink on hover */
+  transform: translateX(5px); /* Slight shift for dynamism */
+}
+
+.faq-question:active span {
+  transform: rotate(90deg); /* Rotate +/– on click */
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #ffffff; /* White text */
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  border-left: 4px solid #ff007a; /* Neon pink left border */
+  border-radius: 5px;
+  opacity: 0; /* Start hidden for animation */
+  animation: fadeIn 0.5s ease forwards; /* Fade-in effect */
+  box-sizing: border-box; /* Ensure padding fits within width */
+}
+
+/* Animation for answer */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-container {
+    width: 100%; /* Full width on mobile */
+    padding: 15px; /* Reduced padding to fit screen */
+    margin: 80px 0; /* Adjusted margin, no side margins */
+    border-radius: 10px; /* Slightly smaller radius */
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.4); /* Reduced glow */
+  }
+
+  .faq-container h2 {
+    font-size: 2rem; /* Smaller heading */
+    margin-bottom: 20px;
+  }
+
+  .faq-question {
+    font-size: 1.2rem; /* Slightly smaller */
+    padding: 10px;
+  }
+
+  .faq-answer {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .faq-question span {
+    font-size: 1.5rem; /* Adjust icon size */
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-container {
+    padding: 10px; /* Even smaller padding */
+    margin: 60px 0; /* Further reduced margin */
+  }
+
+  .faq-container h2 {
+    font-size: 1.5rem; /* Even smaller for tiny screens */
+  }
+
+  .faq-question {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .faq-question span {
+    font-size: 1.3rem;
+  }
+}
