@@ -24,7 +24,7 @@ const Navbar = ({ servicesRef, testimonialsRef }) => {
         <Link to="/" className="navbar-logo-link" onClick={toggleMenu}>
           <img src={logoUrl} alt="Stock Archery Logo" className="navbar-logo-img" />
           <h1 className="navbar-logo">
-  <span className="stock-text">STOCK</span> <span className="archery-text">ARCHERY</span>
+  <span className="stock-text">STOCK</span> <span className="archery-text">RCHERY</span>
 </h1>
         </Link>
         <div className="hamburger" onClick={toggleMenu}>
