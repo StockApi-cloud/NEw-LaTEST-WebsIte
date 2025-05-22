@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const BlogYesBankPenalty = () => {
     const containerStyle = {
@@ -77,85 +78,142 @@ const BlogYesBankPenalty = () => {
         listStyleType: 'disc',
     };
 
+    const ctaButtonStyle = {
+        display: 'inline-block',
+        padding: '12px 24px',
+        backgroundColor: '#ff0101',
+        color: '#ffffff',
+        fontSize: '16px',
+        fontWeight: 'bold',
+        textDecoration: 'none',
+        borderRadius: '5px',
+        marginTop: '20px',
+        transition: 'background-color 0.3s ease',
+    };
+
     return (
-        <div style={containerStyle}>
-            <h1 style={titleStyle}>
-                RBI Slaps ₹29.6 Lakh Fine on Yes Bank: What It Means
-                <div style={underlineStyle}></div>
-            </h1>
+        <>
+            <Helmet>
+                <title>RBI’s Yes Bank Penalty: Learn Trading with Stock Archery’s Courses in Bihar</title>
+                <meta name="description" content="Understand the RBI’s ₹29.6 lakh penalty on Yes Bank and its market impact with Stock Archery’s stock market courses in Bihar and Bhagalpur. Join our trading classes to master investment strategies. Enroll today!" />
+                <meta name="keywords" content="trading classes near me, stock market course Bihar, trading class Bihar, trading class Bhagalpur, stock market Bhagalpur, stock market classes, Stock Archery, Yes Bank penalty, RBI fine" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Stock Archery" />
+                <meta property="og:title" content="RBI’s Yes Bank Penalty: Stock Market Courses in Bihar | Stock Archery" />
+                <meta property="og:description" content="Learn to navigate market reactions to events like the RBI’s Yes Bank penalty with Stock Archery’s trading classes in Bihar and Bhagalpur. Start your investment journey now!" />
+                <meta property="og:image" content="https://res.cloudinary.com/dyrn2eg1j/image/upload/v1747644865/images_1_ikv34v.png" />
+                <meta property="og:url" content="https://www.stockarchery.in" />
+                <meta property="og:type" content="website" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="RBI’s Yes Bank Penalty: Stock Market Courses in Bihar | Stock Archery" />
+                <meta name="twitter:description" content="Master trading strategies for events like the RBI’s Yes Bank penalty with Stock Archery’s stock market courses in Bihar and Bhagalpur. Enroll now!" />
+                <meta name="twitter:image" content="https://res.cloudinary.com/dyrn2eg1j/image/upload/v1747644865/images_1_ikv34v.png" />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Course",
+                        "name": "Stock Market Courses by Stock Archery",
+                        "description": "Expert-led stock market courses in Bihar and Bhagalpur, teaching trading strategies to navigate market events like the RBI’s Yes Bank penalty.",
+                        "provider": {
+                            "@type": "Organization",
+                            "name": "Stock Archery",
+                            "sameAs": "https://www.stockarchery.in",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "addressLocality": "Bhagalpur",
+                                "addressRegion": "Bihar",
+                                "addressCountry": "IN"
+                            }
+                        },
+                        "image": "https://res.cloudinary.com/dyrn2eg1j/image/upload/v1747644865/images_1_ikv34v.png",
+                        "offers": {
+                            "@type": "Offer",
+                            "priceCurrency": "INR",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    })}
+                </script>
+            </Helmet>
+            <div style={containerStyle}>
+                <h1 style={titleStyle}>
+                    RBI’s Yes Bank Penalty: Invest Smart with Stock Archery
+                    <div style={underlineStyle}></div>
+                </h1>
 
-            <div style={sectionStyle}>
-                <p style={paragraphStyle}>
-                    The Reserve Bank of India (RBI) dropped a ₹29.6 lakh penalty on Yes Bank on May 17, 2025, for slipping up on regulatory guidelines. This move puts the spotlight on the bank’s internal controls as it fights to regain its footing after the 2020 crisis.
-                </p>
-                <img
-                    src="https://res.cloudinary.com/dyrn2eg1j/image/upload/v1747644865/images_1_ikv34v.png"
-                    alt="Yes Bank Penalty Overview"
-                    style={imageStyle}
-                />
-            </div>
+                <div style={sectionStyle}>
+                    <p style={paragraphStyle}>
+                        The Reserve Bank of India (RBI) imposed a ₹29.6 lakh penalty on Yes Bank on May 17, 2025, for regulatory lapses, impacting its stock performance and investor confidence. At Stock Archery, our stock market courses in Bihar and Bhagalpur teach you how to navigate such market events. Join our trading classes near you to master investment strategies.
+                    </p>
+                    <img
+                        src="https://res.cloudinary.com/dyrn2eg1j/image/upload/v1747644865/images_1_ikv34v.png"
+                        alt="RBI Yes Bank Penalty 2025"
+                        style={imageStyle}
+                    />
+                </div>
 
-            <div style={sectionStyle}>
-                <h2 style={headingStyle}>📜 Why the Penalty?</h2>
-                <p style={paragraphStyle}>
-                    The fine, issued under the Banking Regulation Act, 1949, comes from a Statutory Inspection for Supervisory Evaluation (ISE) of Yes Bank’s financials as of March 31, 2022. The RBI flagged issues in customer onboarding, due diligence, and loan disbursements, but clarified no fraud was involved.
-                </p>
-                <p style={paragraphStyle}>Key issues found:</p>
-                <ul style={listStyle}>
-                    <li>Loans sanctioned and disbursed without proper checks.</li>
-                    <li>Customer complaints not handled within required timelines.</li>
-                    <li>Violation of lending limits and exposure norms.</li>
-                </ul>
-            </div>
+                <div style={sectionStyle}>
+                    <h2 style={headingStyle}>📜 Why the Penalty?</h2>
+                    <p style={paragraphStyle}>
+                        The RBI’s fine, under the Banking Regulation Act, 1949, stems from a Statutory Inspection for Supervisory Evaluation (ISE) of Yes Bank’s financials as of March 31, 2022. Issues in customer onboarding, due diligence, and loan disbursements were flagged, though no fraud was involved. Our trading classes in Bihar help you analyze such regulatory impacts.
+                    </p>
+                    <p style={paragraphStyle}>Key issues found:</p>
+                    <ul style={listStyle}>
+                        <li>Loans sanctioned and disbursed without proper checks.</li>
+                        <li>Customer complaints not handled within required timelines.</li>
+                        <li>Violation of lending limits and exposure norms.</li>
+                    </ul>
+                </div>
 
-            <div style={sectionStyle}>
-                <h2 style={headingStyle}>⚖️ RBI’s Take</h2>
-                <p style={paragraphStyle}>
-                    The RBI made it clear the penalty is about regulatory lapses, not questioning Yes Bank’s deals with customers. The bank can keep running as usual, but this is a nudge to tighten up its compliance game.
-                </p>
-                <ul style={listStyle}>
-                    <li>No restrictions on daily operations.</li>
-                    <li>A call to strengthen internal governance.</li>
-                </ul>
-            </div>
+                <div style={sectionStyle}>
+                    <h2 style={headingStyle}>⚖️ RBI’s Take</h2>
+                    <p style={paragraphStyle}>
+                        The RBI emphasized that the penalty targets regulatory lapses, not customer transactions, allowing Yes Bank to operate normally while urging better compliance. Learn to assess such events with our stock market courses in Bhagalpur.
+                    </p>
+                    <ul style={listStyle}>
+                        <li>No restrictions on daily operations.</li>
+                        <li>A call to strengthen internal governance.</li>
+                    </ul>
+                </div>
 
-            <div style={sectionStyle}>
-                <h2 style={headingStyle}>🏦 Yes Bank’s Comeback Struggle</h2>
-                <p style={paragraphStyle}>
-                    Post-2020 crisis, Yes Bank’s been rebuilding with new leadership, a cleaner loan book, and efforts to win back trust. But slip-ups like this could hit the brakes on its progress.
-                </p>
-                <img
-                    src="https://res.cloudinary.com/dyrn2eg1j/image/upload/v1747644865/rbi-agencies_uwo1h6.webp"
-                    alt="Yes Bank Recovery"
-                    style={imageStyle}
-                />
-                <p style={paragraphStyle}>Recent steps include:</p>
-                <ul style={listStyle}>
-                    <li>New leadership to steer the ship.</li>
-                    <li>Fixing the loan portfolio to cut risks.</li>
-                    <li>Working to rebuild market and investor confidence.</li>
-                </ul>
-            </div>
+                <div style={sectionStyle}>
+                    <h2 style={headingStyle}>🏦 Yes Bank’s Comeback Struggle</h2>
+                    <p style={paragraphStyle}>
+                        Since the 2020 crisis, Yes Bank has been rebuilding with new leadership and a cleaner loan book. However, this penalty highlights ongoing governance challenges. Our trading classes in Bihar teach you how to evaluate a bank’s recovery potential.
+                    </p>
+                    <img
+                        src="https://res.cloudinary.com/dyrn2eg1j/image/upload/v1747644865/rbi-agencies_uwo1h6.webp"
+                        alt="Yes Bank Recovery Efforts"
+                        style={imageStyle}
+                    />
+                    <p style={paragraphStyle}>Recent steps include:</p>
+                    <ul style={listStyle}>
+                        <li>New leadership to steer the ship.</li>
+                        <li>Fixing the loan portfolio to cut risks.</li>
+                        <li>Working to rebuild market and investor confidence.</li>
+                    </ul>
+                </div>
 
-            <div style={sectionStyle}>
-                <h2 style={headingStyle}>📈 Investor and Market Impact</h2>
-                <p style={paragraphStyle}>
-                    The penalty caused some stock wobbles, with investors staying cautious. The fine’s small, but it’s a reminder of governance gaps. Investors should keep an eye on Yes Bank’s next moves.
-                </p>
-                <ul style={listStyle}>
-                    <li>Track CASA ratios, credit quality, and ROA/ROE metrics.</li>
-                    <li>Listen for management’s take on compliance in earnings calls.</li>
-                    <li>Watch how the bank boosts its compliance culture.</li>
-                </ul>
-            </div>
+                <div style={sectionStyle}>
+                    <h2 style={headingStyle}>📈 Investor and Market Impact</h2>
+                    <p style={paragraphStyle}>
+                        The penalty triggered stock volatility, with investors cautious about governance gaps. While the fine is small, it underscores compliance risks. Our stock market courses in Bhagalpur help you track key metrics to make informed investment decisions.
+                    </p>
+                    <ul style={listStyle}>
+                        <li>Track CASA ratios, credit quality, and ROA/ROE metrics.</li>
+                        <li>Listen for management’s take on compliance in earnings calls.</li>
+                        <li>Watch how the bank boosts its compliance culture.</li>
+                    </ul>
+                </div>
 
-            <div style={sectionStyle}>
-                <h2 style={headingStyle}>📝 Wrapping Up</h2>
-                <p style={paragraphStyle}>
-                    The ₹29.6 lakh fine from the RBI is no big hit financially, but it’s a wake-up call for Yes Bank to get its compliance in check. As it pushes to rebuild trust, fixing these gaps is key to staying on track in the banking game.
-                </p>
+                <div style={sectionStyle}>
+                    <h2 style={headingStyle}>Learn to Navigate Markets with Stock Archery</h2>
+                    <p style={paragraphStyle}>
+                        Ready to master trading during market events like the RBI’s Yes Bank penalty? Join Stock Archery’s trading classes near you in Bihar and Bhagalpur. Our stock market courses cover market analysis, risk management, and trading strategies, empowering beginners and advanced traders. Enroll in our trading class in Bihar or Bhagalpur today!
+                    </p>
+                    <a href="https://www.stockarchery.in" style={ctaButtonStyle}>Join Our Stock Market Courses Now</a>
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 
