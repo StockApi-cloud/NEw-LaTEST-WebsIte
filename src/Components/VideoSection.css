@@ -1,86 +1,127 @@
+/* Root container styling */
 .video-section {
-    display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space between text and image */
-    padding: 2rem;
-    max-width: 1600px;
-    margin: 90px auto 0; /* Add margin-top for space above the section */
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  max-width: 1400px;
+  margin: 100px auto 0;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Text container styling */
 .text-container {
-    flex: 1; /* Take up available space */
-    padding-right: 2rem; /* Space between text and image */
-    min-width: 300px; /* Minimum width for text container */
+  flex: 1;
+  padding-right: 2.5rem;
+  min-width: 320px;
+  animation: fadeIn 1s ease-out forwards;
 }
 
+/* Heading styling */
 .section-heading {
-    font-size: 3rem; /* Adjust heading size */
-    margin-bottom: 1rem; /* Space below heading */
-    font-family: 'Cabin Sketch', cursive;
-    color: #ff0101;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-family: 'Cabin Sketch', cursive;
+  color: #ff0101;
+  line-height: 1.2;
 }
 
+/* Paragraph text styling */
 .section-text {
-    font-size: 20px; /* Adjust text size */
-    color: #080808; /* Text color */
+  font-size: 1.25rem;
+  color: #1f2a44;
+  line-height: 1.8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Image container styling */
 .image-container {
-    flex: 1; /* Take up available space */
-    display: flex;
-    justify-content: center; /* Center image horizontally */
-    height: 350px; /* Set a fixed height for the image container */
-    max-width: 700px; /* Set a maximum width for the image container */
-    width: 100%; /* Make the image container responsive */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.image-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
 .image {
-    width: 100%; /* Make image responsive */
-    height: 100%; /* Make image fill the container height */
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
-    .video-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-    }
+  .video-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin-top: 80px;
+  }
 
-    .text-container {
-        padding-right: 0;
-        padding-bottom: 1rem;
-        min-width: auto;
-        text-align: center;
-    }
+  .text-container {
+    padding-right: 0;
+    padding-bottom: 2rem;
+    min-width: 100%;
+    text-align: center;
+  }
 
-    .image-container {
-        width: 100%;
-        aspect-ratio: 16 / 9; /* Maintain a rectangle */
-        max-width: 100%;
-        height: auto; /* Let height adjust based on aspect ratio */
-        margin: 0;
-    }
+  .section-heading {
+    font-size: 2.25rem;
+  }
 
-    .image {
-        width: 100%;
-        height: 100%;
-        object-fit: contain; /* Show full image without cropping */
-    }
+  .section-text {
+    font-size: 1rem;
+  }
 
-    .section-heading {
-        font-size: 1.5rem;
-    }
+  .image-container {
+    max-width: 100%;
+    height: 250px;
+    margin: 0;
+  }
 
-    .section-text {
-        font-size: 0.9rem;
-    }
+  .image {
+    object-fit: cover;
+  }
+}
 
-    .card {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        padding: 1rem;
-    }
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 1.75rem;
+  }
+
+  .section-text {
+    font-size: 0.9rem;
+  }
+
+  .image-container {
+    height: 200px;
+  }
 }
