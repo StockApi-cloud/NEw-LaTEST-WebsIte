@@ -3,6 +3,12 @@ import './BlogCards.css'; // Import the CSS file for styling
 
 const blogData = [
     {
+        id: 8,
+        image: 'https://res.cloudinary.com/dyrn2eg1j/image/upload/v1748064140/Flux_Dev_A_majestic_golden_Bitcoin_coin_meticulously_detailed__3_leuoxl.jpg',
+        title: 'Bitcoin: New All time high Upcoming ?',
+        link: '/blog8',
+    },
+    {
         id: 7,
         image: 'https://res.cloudinary.com/dyrn2eg1j/image/upload/v1747645011/maxresdefault_n3d1so.jpg',
         title: 'RBI Fines Yes Bank ₹29.6 Lakh',
