@@ -2,6 +2,12 @@ import React from 'react';
 import './BlogCards.css'; // Import the CSS file for styling
 
 const blogData = [
+     {
+        id: 9,
+        image: 'https://res.cloudinary.com/dyrn2eg1j/image/upload/v1748325606/Leonardo_Kino_XL_A_dramatic_cinematic_depiction_of_a_stock_mar_1_x3zta0.jpg',
+        title: 'Sensex Crashes 800 Points',
+        link: '/blog9',
+    },
     {
         id: 8,
         image: 'https://res.cloudinary.com/dyrn2eg1j/image/upload/v1748064140/Flux_Dev_A_majestic_golden_Bitcoin_coin_meticulously_detailed__3_leuoxl.jpg',
