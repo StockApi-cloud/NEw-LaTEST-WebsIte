@@ -50,13 +50,7 @@ const blogData = [
         title: 'Bajaj Housing Finance IPO',
         link: '/blog1',
     },
-    {
-        id: 1,
-        image: 'https://res.cloudinary.com/dyrn2eg1j/image/upload/v1724308567/Pitch_work_-_OLA_Electric_pjd5zk.jpg',
-        title: 'OLA IPO',
-        link: '/blog2',
-    },
-
+    
     
    
    

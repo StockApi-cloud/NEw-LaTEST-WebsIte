@@ -13,7 +13,7 @@ import FAQ from './Components/FAQ';
 import BlogCards from './Components/BlogCards';
 import ContactUs from './Components/ContactUs';
 import Blog from './Components/blog1';
-import Blog2 from './Components/blog2';
+
 import Blog3 from './Components/blog3';
 import Blog4 from './Components/blog4';
 import Blog5 from './Components/blog5';
@@ -47,7 +47,7 @@ function App() {
           <Route path="/blog" element={<BlogCards/>} />
           <Route path="/contactUs" element={<ContactUs/>} />
           <Route path="/blog1" element={< Blog/>} />
-          <Route path="/blog2" element={< Blog2/>} />
+         
           <Route path="/blog3" element={< Blog3/>} />
           <Route path="/blog4" element={< Blog4/>} />
           <Route path="/blog5" element={< Blog5/>} />
