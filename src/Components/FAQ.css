@@ -1,37 +1,38 @@
 /* FAQ.css */
 .faq-container {
-  width: 90%; /* Slightly wider for impact */
-  max-width: 1600px; /* Increased max-width for larger screens */
-  margin: 120px auto; /* More top margin for dramatic spacing */
-  font-family: 'Orbitron', sans-serif; /* Futuristic font */
-  padding: 30px; /* More internal padding */
-  background: linear-gradient(135deg, #1a1a1a 0%, #2e2e2e 100%); /* Dark gradient background */
-  border: 2px solid #00ffcc; /* Neon cyan border */
-  border-radius: 15px; /* Smoother rounded corners */
-  box-shadow: 0 0 20px rgba(0, 255, 204, 0.5); /* Glowing effect */
+  width: 90%;
+  max-width: 1200px; /* Reduced for better readability */
+  margin: 80px auto; /* Balanced spacing */
+  font-family: 'Roboto', sans-serif; /* More professional font */
+  padding: 40px;
+  background: linear-gradient(145deg, #1c1c1c 0%, #2a2a2a 100%); /* Subtle gradient */
+  border: 1px solid #3498db; /* Professional blue accent */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(52, 152, 219, 0.15); /* Subtle glow */
   position: relative;
-  overflow: hidden; /* To contain internal effects */
-  box-sizing: border-box; /* Include padding and border in width */
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .faq-container h2 {
   text-align: center;
-  color: #00ffcc; /* Neon cyan for heading */
-  font-size: 2.5rem; /* Larger heading */
-  margin-bottom: 30px;
-  text-transform: uppercase; /* Bold and loud */
-  letter-spacing: 2px; /* Spacing for impact */
-  text-shadow: 0 0 10px rgba(0, 255, 204, 0.7); /* Neon glow */
+  color: #3498db; /* Professional blue */
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  text-shadow: none; /* Removed glow for cleaner look */
 }
 
 .faq-item {
-  border-bottom: 1px solid #444; /* Subtle dark border */
-  padding: 15px 0;
-  transition: all 0.3s ease; /* Smooth transition for effects */
+  border-bottom: 1px solid #333;
+  padding: 20px 0;
+  transition: all 0.3s ease;
 }
 
 .faq-item:hover {
-  background: rgba(0, 255, 204, 0.1); /* Subtle neon hover effect */
+  background: rgba(52, 152, 219, 0.05); /* Subtle blue hover */
 }
 
 .faq-question {
@@ -39,52 +40,46 @@
   background: none;
   border: none;
   text-align: left;
-  font-size: 1.4rem; /* Larger font */
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 500;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  color: #ffffff; /* White text */
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Slight glow */
-  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
-  box-sizing: border-box; /* Ensure padding fits within width */
+  color: #ffffff;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .faq-question span {
-  font-size: 1.8rem; /* Larger +/– sign */
-  color: #ff007a; /* Neon pink for icons */
-  transition: transform 0.3s ease; /* Rotate effect */
+  font-size: 1.5rem;
+  color: #3498db; /* Professional blue */
+  transition: transform 0.3s ease;
 }
 
 .faq-question:hover {
-  color: #ff007a; /* Neon pink on hover */
-  transform: translateX(5px); /* Slight shift for dynamism */
-}
-
-.faq-question:active span {
-  transform: rotate(90deg); /* Rotate +/– on click */
+  color: #3498db;
+  transform: translateX(3px); /* Subtle movement */
 }
 
 .faq-answer {
-  margin-top: 10px;
+  margin-top: 15px;
   font-size: 1.1rem;
-  color: #ffffff; /* White text */
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  border-left: 4px solid #ff007a; /* Neon pink left border */
-  border-radius: 5px;
-  opacity: 0; /* Start hidden for animation */
-  animation: fadeIn 0.5s ease forwards; /* Fade-in effect */
-  box-sizing: border-box; /* Ensure padding fits within width */
+  line-height: 1.6; /* Improved readability */
+  color: #e0e0e0; /* Slightly softer white */
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-left: 3px solid #3498db;
+  border-radius: 4px;
+  opacity: 0;
+  animation: fadeIn 0.4s ease forwards;
 }
 
-/* Animation for answer */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-8px);
   }
   to {
     opacity: 1;
@@ -95,54 +90,45 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .faq-container {
-    width: 100%; /* Full width on mobile */
-    padding: 15px; /* Reduced padding to fit screen */
-    margin: 80px 0; /* Adjusted margin, no side margins */
-    border-radius: 10px; /* Slightly smaller radius */
-    box-shadow: 0 0 15px rgba(0, 255, 204, 0.4); /* Reduced glow */
+    width: 95%;
+    padding: 25px;
+    margin: 60px auto;
   }
 
   .faq-container h2 {
-    font-size: 2rem; /* Smaller heading */
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
   }
 
   .faq-question {
-    font-size: 1.2rem; /* Slightly smaller */
-    padding: 10px;
+    font-size: 1.1rem;
+    padding: 12px;
   }
 
   .faq-answer {
     font-size: 1rem;
-    padding: 10px;
-  }
-
-  .faq-question span {
-    font-size: 1.5rem; /* Adjust icon size */
+    padding: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .faq-container {
-    padding: 10px; /* Even smaller padding */
-    margin: 60px 0; /* Further reduced margin */
+    width: 100%;
+    padding: 15px;
+    margin: 40px auto;
   }
 
   .faq-container h2 {
-    font-size: 1.5rem; /* Even smaller for tiny screens */
+    font-size: 1.4rem;
   }
 
   .faq-question {
     font-size: 1rem;
-    padding: 8px;
+    padding: 10px;
   }
 
   .faq-answer {
-    font-size: 0.9rem;
-    padding: 8px;
-  }
-
-  .faq-question span {
-    font-size: 1.3rem;
+    font-size: 0.95rem;
+    padding: 12px;
   }
 }
