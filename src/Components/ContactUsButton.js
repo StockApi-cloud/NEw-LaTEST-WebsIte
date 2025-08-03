@@ -5,8 +5,8 @@ import './ContactUsButton.css';  // We'll style it in this CSS file
 const ContactUsButton = () => {
   const handleClick = () => {
     // WhatsApp URL with predefined message
-    const phoneNumber = '+919229102334';
-    const message = encodeURIComponent('Hello, I need assistance!');
+    const phoneNumber = '+916299597952';
+    const message = encodeURIComponent('I want to know more about the Trading Floor.');
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
 
